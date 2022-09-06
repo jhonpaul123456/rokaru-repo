@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-bg {
+  background-color: black;
+  opacity: 80%;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* li a:hover {
+    background-color: #111111;
+  } */
+
+/* Hero content */
+/* Hero BG */
+.hero-bg {
+  background-image: url(assets/images/wood-new.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: auto;
+}
+
+.hero-context {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-context-text-title {
+  font-size: 100px;
+}
+.rokaru-tagline-box {
+  background-color: #ffdddd;
+  padding: 10px;
+  font-size: 15px;
+}
+.standard-btn {
+  background-color: #f90a0a;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* mobile hero section */
+
+@media (max-width: 800px) {
+  .hero-context {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .hero-context-text-title {
+    font-size: 50px;
+  }
+  .rokaru-tagline-box {
+    font-size: 9px;
+  }
+  .standard-btn {
+    display: none;
+  }
+  .hero-context-image img {
+    width: 200px;
+  }
+}
+
+/* end mobile hero section */
+/* End Hero content */
+
+
+/* best seller section */
+.best-seller-wrapper {
+    background-image: url(assets/images/bg-best-seller.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.best-seller-text {
+    font-size: 50px;
+}
+.best-seller-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+  }
+  .card {
+    font-family: 'Lato', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #2b2b2b;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .card .profile-image {
+    padding: 10% 10% 0;
+  }
+  
+  .card .profile-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  
+  .card figcaption {
+    padding: 5% 10% 15%;
+  }
+  
+  .card h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+  }
+  
+  .card h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+  }
+  .details {
+    padding: 0 20px;
+  }
+  .details span {
+    font-size: 12px;
+  }
+
+  /* best seller mobile */
+  @media (max-width: 800px) {
+    .test {
+      display: block;
+    }
+  }
+
+  /* end best seller mobile */
+/* end best seller section */
+
+
+
+/* START OF MENU SECTION */
+.menu-section-container {
+  background-color: #FA0000;
+  color: white;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-card-bg {
+  background-image: url(assets/images/wood-new.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: auto;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+#popup-img {
+  border: 5px solid white;
+}
+.popup {
+  cursor: pointer;
+}
+/* END OF MENU SECTION */
+
+
+/* START ABOUT SECTION  */
+.about-home-section {
+  background-color: #3A0707;
+}
+.about-home-wrapper{
+  background-color: #D9D9D9;
+}
+.about-img {
+  border-right: 25px solid black;
+  border-left: 25px solid black;
+  border-bottom: 25px solid black;
+  width: 100%;
+}
+.about-header{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px 20px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  line-height: 1px;
+}
+.about-header h2 {
+  font-weight: bold;
+}
+.about-header span{
+  font-size: 13px;
+  font-weight: normal;
+}
+.about-body {
+  margin-top: 40px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+.about-body span {
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .about-body span {
+    font-size: 10px;
+    padding-bottom: 50px;
+  }
+}
+/* END ABOUT SECTION  */
+
+
+
+/* START CONTACT SECTION HOME */
+.contact-intro h1 {
+  font-weight: bold;
+}
+.address h2 {
+  font-weight: bold;
+  font-size: 19px;
+}
+.address-info {
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+/* END CONTACT SECTION HOME */
+/* Start footer reusable*/
+footer {
+  background-color: black;
+}
+footer h1 {
+  font-size: 45px;
+  color: white;
+  padding: 50px 0;
+}
+/* End footer footer reusable */
+
+
+
+
+
+
+
+/* START ABOUT PAGE HERO SECTION */
+.hero-about-bg {
+  background-image: url(assets/images/new-res.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: auto;
+}
+.hero-context-about {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.rokaru-about-title h1{
+  font-size: 100px;
+}
+.text-about span {
+ font-size: 19px;
+ color: white;
+ font-weight: 300 !important;
+}
+
+/* Start Small card */
+.small-card {
+  position: relative;
+  padding: 40px 30px;
+  background-color: white;
+  top: -90px;
+  max-width: 400px;
+  z-index: 100;
+  box-shadow: -1px 1px 31px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 1px 31px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 31px 0px rgba(0,0,0,0.75);
+}
+.small-card-title {
+  width: 100%;
+}
+.small-card-title h2 {
+  font-weight: bold;
+  font-size: 23px;
+}
+.small-card-desc {
+  width: 100%;
+}
+.small-card-desc {
+  width: 100%;
+}
+.small-card-desc span {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+/* Start of small card mobile */
+@media (max-width: 800px) {
+  .small-card {
+    top: -50px;
+  }
+  .small-card-title h2 {
+    font-size: 15px;
+  }
+  .small-card-desc span {
+    font-size: 10px;
+  }
+}
+
+/* end of small card mobile */
+/* End Small card */
+
+
+
+
+/* mobile hero about */
+@media (max-width: 800px) {
+  .rokaru-about-title h1 {
+    font-size: 50px;
+  }
+  .text-about span {
+    font-size: 12px;
+  }
+  .hero-context-about {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+}
+/* end mobile hero about */
+/* END START ABOUT PAGE HERO SECTION */
+
+/* start about goal */
+.goal-about-wrapper{
+  background-color: #FD0101;
+}
+.goal-context-about {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.rokaru-goal-title h1{
+  font-size: 100px;
+  color: white;
+}
+.goal-text-about span {
+ font-size: 19px;
+ color: white;
+ font-weight: 300 !important;
+}
+
+/* start goal mobile */
+@media (max-width: 800px) {
+  .rokaru-goal-title h1 {
+    font-size: 50px;
+  }
+  .goal-text-about span {
+    font-size: 11px;
+  }
+}
+
+/* end  goal mobile */
+/* end about goal */
+
+
+
+/* start of mission vision wrapper */
+.mv-wrapper {
+  background-image: url(assets/images/mv-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.mission-card {
+  background-color: white;
+  padding: 40px 20px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+.mission-card span {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.vision-card-title  h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+.mission-card-title h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+.vision-card {
+  background-color: white;
+  padding: 40px 20px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+.vision-card span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+
+/* start mv mobile view style */
+@media (max-width: 800px) {
+  .mission-card-title h1{
+    font-size: 30px;
+  }
+  .mission-card span {
+    font-size: 10px;  
+  }
+  .vision-card-title  h1 {
+    font-size: 30px;
+  }
+  .vision-card span {
+    font-size: 10px;
+  }
+  .mv-wrapper {
+    background-color: red !important;
+  }
+  
+}
+/* end mv mobile view style */
+/* end of mission vision wrapper */
+
+
+
+
+
+/* FOOD PAGE TITLE */
+.image-slider-wrapper {
+  padding: 30px 20px;
+}
+.sub-food-title h5 {
+  font-size: 60px;
+}
+
+/* start of food page slider */
+.slider-inner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: 1px solid white;
+}
+.slider-inner img{
+  display: none;
+  width: 100%;
+  height: 300px;
+}
+.slider-inner img.active {
+  display: inline-block;
+}
+.prev, .next {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+  width: 50px;
+}
+.prev {
+  position: relative;
+  margin-right: -100px;
+  z-index: 100;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+.next {
+  position: relative;
+  margin-left: -50px;
+  z-index: 100;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+.prev:hover {
+  opacity: 1;
+}
+.next:hover {
+  opacity: 1;
+}
+.active {
+  transition: background-image 3s;
+}
+/* end of food page slider */
+/* END FOOD PAGE TITLE */
